@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS name</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>First Name : </td>
+			<td><input type="text" id="txtFirst" value=""></td>
+		</tr>
+		<tr>
+			<td>Last Name : </td>
+			<td><input type="text" id="txtSecond" value=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button type="button" onclick="showDetails()">Show Details</button></td>
+		</tr>
+	</table>
+
+	<p id="output"></p>
+	<script type="text/javascript">
+		function showDetails(){
+			var fname=document.getElementById("txtFirst").value;
+			var lname=document.getElementById("txtSecond").value;
+
+			alert("First Name : "+fname+"\nLast Name : "+lname);
+			document.getElementById("output").innerHTML="First Name : "+fname+"<br>Last Name : "+lname;
+		}
+	</script>
+</body>
+</html>

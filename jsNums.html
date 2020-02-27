@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jsNums</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Number 01 : </td>
+			<td><input type="text" id="txtNo1" value=""></td>
+		</tr>
+		<tr>
+			<td>Number 01 : </td>
+			<td><input type="text" id="txtNo2" value=""></td>
+		</tr>
+		<tr>
+			<td>Result : </td>
+			<td><input type="text" id="resultID" value=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<button type="button" onclick="add2Num()">+</button>
+				<button type="button" onclick="sub2Num()">-</button>
+				<button type="button" onclick="mul2Num()">*</button>
+				<button type="button" onclick="div2Num()">/</button>
+			</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		function add2Num(){
+			var num1=document.getElementById("txtNo1").value;
+			var num2=document.getElementById("txtNo2").value;
+			var result=parseInt(num1)+parseInt(num2);
+			document.getElementById("resultID").value=result;
+		}
+		function sub2Num(){
+			var num1=document.getElementById("txtNo1").value;
+			var num2=document.getElementById("txtNo2").value;
+			var result=parseInt(num1)-parseInt(num2);
+			document.getElementById("resultID").value=result;
+		}
+		function mul2Num(){
+			var num1=document.getElementById("txtNo1").value;
+			var num2=document.getElementById("txtNo2").value;
+			var result=parseInt(num1)*parseInt(num2);
+			document.getElementById("resultID").value=result;
+		}
+		function div2Num(){
+			var num1=document.getElementById("txtNo1").value;
+			var num2=document.getElementById("txtNo2").value;
+			var result=parseInt(num1)/parseInt(num2);
+			document.getElementById("resultID").value=result;
+		}
+	</script>
+</body>
+</html>
